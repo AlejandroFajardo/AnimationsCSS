@@ -1,0 +1,39 @@
+div{
+    font-family: 'Arial';
+    background-color: #86F38B;
+    margin: 10px 100px;
+    font-weight: bolder;
+    padding: 15px 30px;
+    width: 80px;
+    display: inline-block;
+    font-size: 17px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.Rotation{
+    -moz-animation: 1.5s rotation 1;
+    -moz-backface-visibility: visible;
+}
+
+@-moz-keyframes rotation{
+    40%{
+        -moz-transform: perspective(300px)
+                        translateZ(120px)
+                        rotateY(170deg);
+    }
+    50%{
+        -moz-transform: perspective(300px)
+                        translateZ(120px)
+                        rotateY(190deg);
+    }
+    80%{
+        -moz-transform: perspective(300px)
+                        translateZ(0px)
+                        rotateY(360deg);
+    }
+    100%{
+        -moz-transform: perspective(300px)
+                        rotateY(360deg);
+    }
+}

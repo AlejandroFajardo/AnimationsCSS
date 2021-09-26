@@ -1,0 +1,19 @@
+div {
+    font-family: 'Arial';
+    background-color: #86F38B;
+    margin: 10px 10px;
+    font-weight: bolder;
+    padding: 15px 30px;
+    width: 140px;
+    height: 80px;
+    display: inline-block;
+    font-size: 17px;
+    text-align: center;
+    position: relative;
+}
+
+p {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}

@@ -1,0 +1,54 @@
+div{
+    font-family: 'Arial';
+    background-color: #86F38B;
+    margin: 10px 100px;
+    font-weight: bolder;
+    padding: 15px 30px;
+    width: 80px;
+    display: inline-block;
+    font-size: 17px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.RotationX{
+    -moz-animation: 1.5s rotationX 1;
+    -moz-backface-visibility:visible;
+}
+
+@-moz-keyframes rotationX{
+    0%{
+        opacity: 0.5;
+        -moz-transform: perspective(200px)
+                        rotateX(90deg);
+    }
+    40%{
+        -moz-transform: perspective(200px)
+                        rotateX(-20deg);
+    }
+    70%{
+        -moz-transform: perspective(200px)
+                        rotateX(20deg);
+    }
+}
+
+.RotationY{
+    -moz-animation: 1.5s rotationY 1;
+    -moz-backface-visibility:visible;
+}
+
+@-moz-keyframes rotationY{
+    0%{
+        opacity: 0.5;
+        -moz-transform: perspective(300px)
+                        rotateY(-70deg);
+    }
+    40%{
+        -moz-transform: perspective(300px)
+                        rotateY(15deg);
+    }
+    70%{
+        -moz-transform: perspective(300px)
+                        rotateY(-15deg);
+    }
+}
